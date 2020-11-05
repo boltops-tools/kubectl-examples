@@ -1,0 +1,7 @@
+---
+metadata:
+  labels:
+    app: simple
+  name: simple-dev
+apiVersion: v1
+kind: Namespace

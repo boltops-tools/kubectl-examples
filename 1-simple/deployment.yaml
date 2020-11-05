@@ -1,0 +1,21 @@
+---
+metadata:
+  namespace: simple
+  labels:
+    app: simple
+  name: web
+spec:
+  selector:
+    matchLabels:
+      app: simple
+  template:
+    metadata:
+      labels:
+        app: simple
+    spec:
+      containers:
+      - name: web
+        image: nginx
+  replicas: 1
+apiVersion: apps/v1
+kind: Deployment
